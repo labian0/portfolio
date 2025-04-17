@@ -3,9 +3,9 @@ import { Box, Flex, Heading, Text } from "@radix-ui/themes"
 export const Header = () => {
     return (
         <>
-        <Flex direction="column" width="100%">
+        <Flex direction="column" width="100%" mt={{md:"6rem"}}>
         <Heading as="h1" size={"8"}>Antoine Lalagüe--Binos</Heading>
-        <Flex direction="row" gap="6"  justify="between">
+        <Flex direction={{initial:"column", md:"row"}} gap="6"  justify="between">
             <Flex direction="column">
             <Heading weight="light">Full stack dev</Heading>
             <Box height="24px"></Box>
@@ -15,11 +15,13 @@ export const Header = () => {
             </Text>
             </Flex>
 
-            <Box width="16rem" height="16rem">
+            <Flex width="100%" justify="center">
+            <Flex width="16rem" height="16rem" justify="center">
                 <img src="https://m.media-amazon.com/images/I/51-ZnMsEGnL._AC_UY1000_.jpg" alt="" 
                 style={{objectFit:"contain", height:"100%", borderRadius: "var(--radius-2)",
             }}/>
-            </Box>
+            </Flex>
+            </Flex>
         </Flex>
 
         </Flex>

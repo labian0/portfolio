@@ -20,12 +20,11 @@ createRoot(document.getElementById('root')!).render(
   justify="center"
   align="center"
   >
-  <Container size="2">
-
-  <Flex direction="column" gap="3" align="center" justify="center">
+  
+  <Flex direction="column" gap="3" align="center" justify="center" maxWidth="52rem">
     <App />
   </Flex>
-  </Container>
+
   </Flex>
   </Theme>
   </StrictMode>,

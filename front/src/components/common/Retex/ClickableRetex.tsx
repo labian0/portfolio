@@ -12,13 +12,25 @@ export const ClickableRetex:React.FC<ClickableRetexProps> = (props) => {
 
     return (
         <>
-        <Dialog.Root>
+        <Dialog.Root
+		>
 	<Dialog.Trigger>
 		
 		<a><RetexCard retex={retex}/></a>
 	</Dialog.Trigger>
 
-	<Dialog.Content maxWidth="100vw" maxHeight="70vh">
+	<Dialog.Content 
+
+	style={{
+	}}
+	maxWidth={{
+		initial:"100vw",
+		md: "50rem"
+	}}
+	
+	maxHeight={{
+		initial:"70vh",
+	}}>
 		<Flex justify="between">
 		<Retex retex={retex}/>
 		<Flex gap="3" justify="end">

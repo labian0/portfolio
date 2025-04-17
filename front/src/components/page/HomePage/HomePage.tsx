@@ -30,7 +30,7 @@ export const HomePage: React.FC = () => {
         <Heading>Mes Projets</Heading>
         <Heading as="h4" size="2" weight="regular">(Clickable!)</Heading>
 
-        <Flex direction="row" gap="5" wrap="wrap">
+        <Flex direction="row" gap={{md:"5"}} wrap="wrap" justify="center">
         <ClickableRetex retex={model}/>
         <ClickableRetex retex={model}/>
         <ClickableRetex retex={model}/>
