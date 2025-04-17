@@ -13,7 +13,6 @@
     "@radix-ui/themes": "^3.2.1",
     "axios": "^1.8.4",
     "monorepo": "github:radix-ui/themes",
-    "radix-ui": "^1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.5.0",

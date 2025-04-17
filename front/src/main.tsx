@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')!).render(
   accentColor="grass"
   grayColor="gray"
   panelBackground="solid"
-  scaling="110%"
+  scaling="100%"
   radius="large"
   >
   <Flex
@@ -19,7 +19,6 @@ createRoot(document.getElementById('root')!).render(
   gap="2"
   justify="center"
   align="center"
-  height="100vh"
   >
   <Container size="2">
 

@@ -1,13 +1,14 @@
-import { Badge, Flex } from "@radix-ui/themes"
+import { Flex } from "@radix-ui/themes"
 
+interface BadgeRowProps {
+    badges: React.ReactNode[]
+}
 
-
-export const BadgeRow = () => {
+export const BadgeRow:React.FC<BadgeRowProps> = (props) => {
     return (
         <>
         <Flex direction="row" gap="1">
-            <Badge color="red">Data science</Badge>
-            <Badge color="blue">IUT</Badge>
+            {props.badges}
         </Flex>
         </>
     )
