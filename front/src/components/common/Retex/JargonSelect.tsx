@@ -1,10 +1,10 @@
-import { Box, Button, DropdownMenu, Flex, Heading, RadioGroup, Text } from "@radix-ui/themes"
-import { useState } from "react"
+import { Button, DropdownMenu, Flex, Text } from "@radix-ui/themes"
+import { JargonLevel } from "../../../model/JargonLevel"
+import { useJargon } from "../../../context/JargonLevelContext"
 
-type JargonLevel = "BEGINNER" | "INTERMEDIATE" | "EXPERT"
 
 export const JargonSelect = () => {
-    const [level, setLevel] = useState<JargonLevel>("BEGINNER")
+    const {level, setLevel} = useJargon();
     const LEVELS: JargonLevel[] = ["BEGINNER", "INTERMEDIATE", "EXPERT"]
 
     return (

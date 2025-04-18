@@ -1,4 +1,4 @@
-import { Box, Card, Flex, Avatar, Text } from "@radix-ui/themes"
+import { Box, Card, Flex, Text } from "@radix-ui/themes"
 
 interface SkillProps {
     name: string

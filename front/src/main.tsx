@@ -2,7 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import "@radix-ui/themes/styles.css";
 import App from './App.tsx'
-import { Theme, Flex, Container } from '@radix-ui/themes'
+import { Theme, Flex } from '@radix-ui/themes'
+import { JargonProvider } from './context/JargonLevelContext.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')!).render(
   scaling="100%"
   radius="large"
   >
+  <JargonProvider>
   <Flex
   direction='row'
   gap="2"
@@ -26,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
   </Flex>
 
   </Flex>
+  </JargonProvider>
   </Theme>
   </StrictMode>,
 )

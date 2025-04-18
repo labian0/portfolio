@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, Flex, Heading, Text } from "@radix-ui/themes";
+import { Button, Flex, Heading } from "@radix-ui/themes";
 import { Header } from "./Header";
 import { ClickableRetex } from "../../common/Retex/ClickableRetex";
 import { RetexModel } from "../../../model/Retex";
 import { SkillGrid } from "../../common/Skill/SkillGrid";
-import { DATA_SCIENCE, IUT, PERSO } from "../../../model/Badges"
+import { DATA_SCIENCE, DEVOPS, IUT, PERSO } from "../../../model/Badges"
 
 export const HomePage: React.FC = () => {
 
@@ -13,7 +13,7 @@ export const HomePage: React.FC = () => {
         description: "Pure insight for resellers",
         logoUrl: "https://www.fibermall.com/blog/wp-content/uploads/2024/08/GPON-OLT-SFP-UF-HORIZON.jpg",
         imageUrls: [],
-        badges: [DATA_SCIENCE, IUT, PERSO],
+        badges: [DATA_SCIENCE, IUT, DEVOPS],
         websiteUrl: "https://vintrends.fr/"
     }
 

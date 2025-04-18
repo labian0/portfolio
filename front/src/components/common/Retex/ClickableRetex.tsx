@@ -1,4 +1,4 @@
-import { Dialog, Button, Flex, TextField, Text } from "@radix-ui/themes";
+import { Dialog, Button, Flex } from "@radix-ui/themes";
 import { RetexModel } from "../../../model/Retex"
 import { RetexCard } from "./RetexCard";
 import { Retex } from "./Retex";
