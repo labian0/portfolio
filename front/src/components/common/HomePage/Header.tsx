@@ -1,9 +1,10 @@
-import { Box, Flex, Heading, Text } from "@radix-ui/themes"
+import { Box, Card, Flex, Heading, Text } from "@radix-ui/themes"
 
 export const Header = () => {
     return (
         <>
-        <Flex direction="column" width="100%" mt={{md:"6rem"}}>
+        <Card>
+        <Flex direction="column" width="100%" >
         <Heading as="h1" size={"8"}>Antoine Lalagüe--Binos</Heading>
         <Flex direction={{initial:"column", md:"row"}} gap="6"  justify="between">
             <Flex direction="column">
@@ -25,7 +26,7 @@ export const Header = () => {
         </Flex>
 
         </Flex>
-        
+        </Card>
         </>
     )
 }
