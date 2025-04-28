@@ -5,7 +5,7 @@ export const IUT = <Badge color="blue">IUT</Badge>
 export const PERSO = <Badge color="green">Perso</Badge>
 export const DEVOPS = <Badge color="yellow">DevOps</Badge>
 export const SCRUM = <Badge color="orange">Scrum</Badge>
-export const WEBDEV = <Badge color="">Dev. Web</Badge>
+export const WEBDEV = <Badge color="gold">Dev. Web</Badge>
 export const SYSPROG = <Badge color="pink">Prog. Systèmes</Badge>
 export const MATH = <Badge color="red">Maths</Badge>
 export const SUSTAINABILITY = <Badge color="green">Dév. Durable</Badge>

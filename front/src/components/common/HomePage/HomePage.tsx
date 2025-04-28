@@ -6,7 +6,7 @@ import { RetexSection } from "../Retex/RetexSection";
 import { ContactForm } from "../ContactForm/ContactForm";
 
 export const HomePage: React.FC = () => {
-    const targetRef = useRef(null);
+    const targetRef = useRef<null | HTMLDivElement>(null);
 
     return (
         <>
