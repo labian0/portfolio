@@ -34,6 +34,8 @@ export const HomePage: React.FC = () => {
         
         <RetexSection/>
         
+        <Box mb="3rem"></Box>
+
         <SkillSection/>
 
         <div ref={targetRef}></div>

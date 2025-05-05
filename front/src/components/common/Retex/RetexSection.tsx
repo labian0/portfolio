@@ -143,7 +143,7 @@ export const RetexSection = () => {
         <Heading>Mes Projets</Heading>
         <Heading as="h4" size="2" weight="regular">(Cliquez!)</Heading>
 
-        <Flex direction="row" gap={{initial:"1",md:"5"}} wrap="wrap" justify="center">
+        <Flex direction="row" gap={{initial:"2",md:"5"}} wrap="wrap" justify="center">
         <ClickableRetex retex={vintrends}/>
         <ClickableRetex retex={ndi}/>
         <ClickableRetex retex={minishell}/>

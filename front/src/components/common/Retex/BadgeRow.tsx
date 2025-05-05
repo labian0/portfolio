@@ -7,7 +7,7 @@ interface BadgeRowProps {
 export const BadgeRow:React.FC<BadgeRowProps> = (props) => {
     return (
         <>
-        <Flex direction="row" gap="1">
+        <Flex direction="row" gap="0">
             {props.badges}
         </Flex>
         </>

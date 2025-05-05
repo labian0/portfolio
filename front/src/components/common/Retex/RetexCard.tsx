@@ -10,7 +10,7 @@ export const RetexCard:React.FC<RetexCardProps> = (props) => {
     
     return (
         <>
-        <Box maxWidth="210px">
+        <Box width="210px" height="70px" mt={{initial:"3",md:"0"}}>
             <Card>
                 <Flex gap="3" align="center">
                     <Avatar
@@ -21,9 +21,6 @@ export const RetexCard:React.FC<RetexCardProps> = (props) => {
                     <Box>
                         <Text as="div" size="2" weight="bold">
                             {retex.name}
-                        </Text>
-                        <Text as="div" size="2" color="gray">
-                            {retex.description}
                         </Text>
                         
                     </Box>

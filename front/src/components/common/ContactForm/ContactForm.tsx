@@ -18,7 +18,7 @@ export const ContactForm = () => {
     return (
         <>
         <Heading>Contactez moi!</Heading>
-        <Flex direction="column" width="48rem" gap="3">
+        <Flex direction="column" width={{initial:"100vw",xs:"80vw",md:"48rem"}} gap="3">
         <TextField.Root placeholder="Votre email" onChange={(e) => setEmail(e.target.value)} value={email}>
         </TextField.Root>
 

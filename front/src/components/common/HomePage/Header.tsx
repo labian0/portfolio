@@ -4,7 +4,7 @@ export const Header = () => {
     return (
         <>
         <Card>
-        <Flex direction="column" width="100%" >
+        <Flex direction="column" width={{initial:"100vw", md:"100%"}} >
         <Heading as="h1" size={"8"}>Antoine Lalagüe--Binos</Heading>
         <Flex direction={{initial:"column", md:"row"}} gap="6"  justify="between">
             <Flex direction="column">

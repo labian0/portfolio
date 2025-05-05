@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')!).render(
   align="center"
   >
   
-  <Flex direction="column" gap="3" align="center" justify="center" maxWidth="52rem">
+  <Flex direction="column" gap="3" align="center" justify="center" maxWidth={{initial:"100vw",md:"52rem"}}>
     <App />
   </Flex>
 
