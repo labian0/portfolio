@@ -3,6 +3,17 @@ import { ClickableRetex } from "./ClickableRetex";
 import { RetexModel } from "../../../model/Retex";
 import { DATA_SCIENCE, IUT, DEVOPS, PERSO, WEBDEV, SCRUM, SYSPROG, CRYPTO, SUSTAINABILITY, API, AI, MATH } from "../../../model/Badges";
 import terminal from "../../../../public/terminal.png"
+import pixelwarLogo from "/public/64be586406357a4d7f584f89.webp"
+import pixelwarImage from "/public/screen-chasse-tresor-c006cfb1f6cf494d6f82be7956562d5f.png"
+import nixLogo from "/public/Nix_Snowflake_Logo.svg"
+import thinkpad from "/public/thinkpad.jpg"
+import votatorLogo from "/public/Logo_vote.svg"
+import chatLogo from "/public/134914.png"
+import graphLogo from "/public/Graph_betweenness.svg"
+import graphImage from "/public/graph2.png"
+import pwmanLogo from "/public/lock-icon_34397.webp"
+import towaImg from "/public/towa.png"
+import chatImg from "/public/Screenshot_2025-05-06_07-19-58.png"
 
 const vintrends:RetexModel = {
     name: "Vintrends",
@@ -50,8 +61,8 @@ const minishell:RetexModel = {
 const nixos:RetexModel = {
     name: "NixOS Thinkpad",
     description: "Installation de Linux sur PC de 2011",
-    logoUrl: "/public/Nix_Snowflake_Logo.svg",
-    imageUrl: "/public/thinkpad.jpg",
+    logoUrl: nixLogo,
+    imageUrl: thinkpad,
     badges: [SYSPROG,PERSO,SUSTAINABILITY],
     paragraph:
     <Text>J'ai acheté d'occasion un ordinateur portable Thinkpad de 2011. Pour le rendre utilisable en tant que machine de travail, il fallait enlever la version de windows présente et repartir de 0. après avoir racheté une batterie car l'ancienne était gravement endommagée et peu fonctionnelle, j'ai installé un nouveau système d'exploitation par dessus, NixOS. NixOS est une distribution gnu/linux, open-source, maintenue par la communauté, spéciale pour son approche déclarative à sa configuration; En effet, sur NixOS, il est coutume et nécessaire de noter de façon déclarative tous les changements apportés à la configuration initiale. Cela permet une reproducibilité et une maintenabilité sans égal dans l'écosystème Linux. Mon but, à long terme, et d'installer NixOS sur mes autres machines principales afin de profiter d'un environnement de développement et de travail uniforme, sur mesure, et reproduisible à l'infini.
@@ -61,7 +72,7 @@ const nixos:RetexModel = {
 const passwordMan:RetexModel = {
     name: "Password Manager",
     description: "Gestionnaire de mots de passe auto-hébergé",
-    logoUrl: "/public/lock-icon_34397.webp",
+    logoUrl: pwmanLogo,
     badges: [CRYPTO,PERSO,],
     paragraph:
     <Text>
@@ -74,8 +85,8 @@ const passwordMan:RetexModel = {
 const pixelWar:RetexModel = {
     name: "Pixel War",
     description: "Création d'un site+canvas interactif",
-    logoUrl: "/public/64be586406357a4d7f584f89.webp",
-    imageUrl: "/public/screen-chasse-tresor-c006cfb1f6cf494d6f82be7956562d5f.png",
+    logoUrl: pixelwarLogo,
+    imageUrl: pixelwarImage,
     badges: [WEBDEV,API,IUT],
     paragraph:
     <Text>
@@ -89,7 +100,7 @@ const pixelWar:RetexModel = {
 const votator:RetexModel = {
     name: "Votator",
     description: "Création d'un frontend interactif en React",
-    logoUrl: "/public/Logo_vote.svg",
+    logoUrl: votatorLogo,
     badges: [WEBDEV,API,IUT],
     paragraph:
     <Text>
@@ -102,8 +113,8 @@ Le webdev orienté composants est une façon de concevoir des interfaces qui per
 const chatroom:RetexModel = {
     name: "Tchat en direct",
     description: "Messagerie en direct",
-    logoUrl: "/public/134914.png",
-    imageUrl: "/public/Screenshot_2025-05-06_07-19-58.png",
+    logoUrl: chatLogo,
+    imageUrl: chatImg,
     badges: [WEBDEV,PERSO],
     websiteUrl: "https://github.com/labian0/chat-example",
     paragraph:
@@ -117,8 +128,8 @@ Le problème avec les méthodes habituelles de communication entre un client (vo
 const towa:RetexModel = {
     name: "Towa",
     description: "Participation à un tournoi d'IA",
-    logoUrl: "/public/towa.png",
-    imageUrl: "/public/towa.png",
+    logoUrl: towaImg,
+    imageUrl: towaImg,
     badges: [AI,IUT,MATH],
     paragraph:
     <Text>
@@ -131,8 +142,8 @@ Le problème principal avec mon approche est que l'algorithme utilisé avait une
 const graphs:RetexModel = {
     name: "Visualisation de Graphes",
     description: "Application pour visualiser et manipuler des graphes",
-    logoUrl: "/public/Graph_betweenness.svg",
-    imageUrl: "/public/graph2.png",
+    logoUrl: graphLogo,
+    imageUrl: graphImage,
     badges: [MATH,IUT,DATA_SCIENCE],
     paragraph:
     <Text>
