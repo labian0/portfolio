@@ -13,7 +13,7 @@ export const Header = () => {
             <Text as="p" size="2">
                 Passionné d'informatique depuis mon plus jeune âge, j'ai commencé à programmer avec Python puis Java.
                 J'ai développé de nombreux projets personnels en plus de ceux réalisés au sein des cours.
-                Vous pouvez les consulter <u>ici.</u>
+                Vous pouvez les consulter ici.
             </Text>
             </Flex>
 

@@ -153,14 +153,14 @@ export const RetexSection = () => {
         <Flex direction="row" gap={{initial:"2",md:"5"}} wrap="wrap" justify="center">
         <ClickableRetex retex={vintrends}/>
         <ClickableRetex retex={ndi}/>
-        <ClickableRetex retex={minishell}/>
-        <ClickableRetex retex={nixos}/>
+        <ClickableRetex retex={towa}/>
         <ClickableRetex retex={pixelWar}/>
         <ClickableRetex retex={passwordMan}/>
+        <ClickableRetex retex={nixos}/>
         <ClickableRetex retex={chatroom}/>
         <ClickableRetex retex={votator}/>
         <ClickableRetex retex={graphs}/>
-        <ClickableRetex retex={towa}/>
+        <ClickableRetex retex={minishell}/>
 
         </Flex>
         </>
