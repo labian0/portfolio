@@ -7,7 +7,7 @@ import terminal from "../../../../public/terminal.png"
 const vintrends:RetexModel = {
     name: "Vintrends",
     description: "Insight avancé pour resellers",
-    logoUrl: "https://www.fibermall.com/blog/wp-content/uploads/2024/08/GPON-OLT-SFP-UF-HORIZON.jpg",
+    logoUrl: "https://vintrends.fr/vintrends.png",
     imageUrl: "https://vintrends.fr/vintrends.png",
     badges: [DATA_SCIENCE, PERSO, DEVOPS],
     paragraph:
@@ -50,7 +50,8 @@ const minishell:RetexModel = {
 const nixos:RetexModel = {
     name: "NixOS Thinkpad",
     description: "Installation de Linux sur PC de 2011",
-    logoUrl: terminal,
+    logoUrl: "/public/Nix_Snowflake_Logo.svg",
+    imageUrl: "/public/thinkpad.jpg",
     badges: [SYSPROG,PERSO,SUSTAINABILITY],
     paragraph:
     <Text>J'ai acheté d'occasion un ordinateur portable Thinkpad de 2011. Pour le rendre utilisable en tant que machine de travail, il fallait enlever la version de windows présente et repartir de 0. après avoir racheté une batterie car l'ancienne était gravement endommagée et peu fonctionnelle, j'ai installé un nouveau système d'exploitation par dessus, NixOS. NixOS est une distribution gnu/linux, open-source, maintenue par la communauté, spéciale pour son approche déclarative à sa configuration; En effet, sur NixOS, il est coutume et nécessaire de noter de façon déclarative tous les changements apportés à la configuration initiale. Cela permet une reproducibilité et une maintenabilité sans égal dans l'écosystème Linux. Mon but, à long terme, et d'installer NixOS sur mes autres machines principales afin de profiter d'un environnement de développement et de travail uniforme, sur mesure, et reproduisible à l'infini.
@@ -59,8 +60,8 @@ const nixos:RetexModel = {
 
 const passwordMan:RetexModel = {
     name: "Password Manager",
-    description: "",
-    logoUrl: terminal,
+    description: "Gestionnaire de mots de passe auto-hébergé",
+    logoUrl: "/public/lock-icon_34397.webp",
     badges: [CRYPTO,PERSO,],
     paragraph:
     <Text>
@@ -72,21 +73,23 @@ const passwordMan:RetexModel = {
 
 const pixelWar:RetexModel = {
     name: "Pixel War",
-    description: "Réalisation d'un Shell en C",
-    logoUrl: terminal,
+    description: "Création d'un site+canvas interactif",
+    logoUrl: "/public/64be586406357a4d7f584f89.webp",
+    imageUrl: "/public/screen-chasse-tresor-c006cfb1f6cf494d6f82be7956562d5f.png",
     badges: [WEBDEV,API,IUT],
     paragraph:
     <Text>
     Lors de notre première année de BUT informatique, nous avons été chargé de construire un site web permettant l'affichage de données récupérées auprès d'un API distant. En l'occurence, notre professeur avait construit un API permettant aux élèves de s'affronter sur un canvas virtuel, jeu librement inspiré de la Pixel War sur le subreddit r/place. J'ai eu l'occasion de perfectionner mes capacités à comprendre, intéragir avec, et mettre en page les informations d'un API RESTful. 
 <br /><br />
-    Bonus: La consigne initiale était simplement de construire une interface grâce à laquelle il était possible de voir, et modifier un canvas interactif. avec un ami (lien vers rodolf), nous nous sommes chargés de construire plusieurs outils, notamment un programme permettant de traduire n'importe quelle image de n'importe quelle dimension en matrice de pixels, pouvant ensuite être fournie à notre deuxième programme, servant quant à lui à automatiquement placer des pixels en utilisant autant de comptes différents que nous lui fournissions. 😉
+    Bonus: La consigne initiale était simplement de construire une interface grâce à laquelle il était possible de voir, et modifier un canvas interactif. 
+    <br /><br />Avec un <a href="https://rodolphent.github.io/" target="_blank">ami</a>, nous nous sommes chargés de construire plusieurs outils, notamment un programme permettant de traduire n'importe quelle image de n'importe quelle dimension en matrice de pixels, pouvant ensuite être fournie à notre deuxième programme, servant quant à lui à automatiquement placer des pixels en utilisant autant de comptes différents que nous lui fournissions. 😉
     </Text>,
 }
 
 const votator:RetexModel = {
     name: "Votator",
-    description: "",
-    logoUrl: terminal,
+    description: "Création d'un frontend interactif en React",
+    logoUrl: "/public/Logo_vote.svg",
     badges: [WEBDEV,API,IUT],
     paragraph:
     <Text>
@@ -98,12 +101,14 @@ Le webdev orienté composants est une façon de concevoir des interfaces qui per
 
 const chatroom:RetexModel = {
     name: "Tchat en direct",
-    description: "",
-    logoUrl: terminal,
-    badges: [WEBDEV,API,PERSO],
+    description: "Messagerie en direct",
+    logoUrl: "/public/134914.png",
+    imageUrl: "/public/Screenshot_2025-05-06_07-19-58.png",
+    badges: [WEBDEV,PERSO],
+    websiteUrl: "https://github.com/labian0/chat-example",
     paragraph:
     <Text>
-    Lors de mon année de 1ere générale, j'ai eu l'occasion comme projet de fin d'année de spécialité NSI de réaliser un site web complètement auto-hébergé (sur un raspberry pi 3 à la maison), permettant la discussion entre plusieurs personnes dans un tchat en direct, avec simplement la . J'ai utilisé des technologies de websockets pour permettre une connexion et un échange de données bidirectionnels entre client et serveur.
+    Lors de mon année de 1ere générale, j'ai eu l'occasion comme projet de fin d'année de spécialité NSI de réaliser un site web complètement auto-hébergé (sur un raspberry pi 3 à la maison), permettant la discussion entre plusieurs personnes dans un tchat en direct. J'ai utilisé des technologies de websockets pour permettre une connexion et un échange de données bidirectionnels entre client et serveur.
 <br /><br />
 Le problème avec les méthodes habituelles de communication entre un client (votre ordinateur) et un serveur (l'ordinateur distant hébergeant le site web auquel vous vous connectez), souvent passant par les requêtes HTTP, et que le serveur ne peut pas spontanément prévenir le client d'un évènement: en effet, il est nécessaire que le client "pose une question", pour que le serveur lui réponde. Dans le cas d'une messagerie en direct, il faut que lorsque Alice envoie un message, il puisse être affiché sur l'ordinateur de Bob. Avec des requêtes traditionnelles, il faudrait donc que Bob envoie régulièrement (par exemple, toutes les secondes) une requête demandant au serveur, "est-ce que de nouveaux messages ont été postés?". Cette façon de faire est très inneficace, et il est préférable d'utiliser une technologie permettant une connexion bidirectionnelle, ou le serveur et le client vont initier leur conversation par un "handshake", établissant la connexion entre les deux parties. Ensuite, chacun des deux périphériques peut spontanément notifier l'autre d'un évènement (par exemple, le client peut envoyer un message au serveur, et le serveur, une fois qu'il reçoit un message d'un client, peut envoyer une notification à tous les autres membres de la conversation).
 </Text>,
@@ -112,7 +117,8 @@ Le problème avec les méthodes habituelles de communication entre un client (vo
 const towa:RetexModel = {
     name: "Towa",
     description: "Participation à un tournoi d'IA",
-    logoUrl: terminal,
+    logoUrl: "/public/towa.png",
+    imageUrl: "/public/towa.png",
     badges: [AI,IUT,MATH],
     paragraph:
     <Text>
@@ -125,7 +131,8 @@ Le problème principal avec mon approche est que l'algorithme utilisé avait une
 const graphs:RetexModel = {
     name: "Visualisation de Graphes",
     description: "Application pour visualiser et manipuler des graphes",
-    logoUrl: terminal,
+    logoUrl: "/public/Graph_betweenness.svg",
+    imageUrl: "/public/graph2.png",
     badges: [MATH,IUT,DATA_SCIENCE],
     paragraph:
     <Text>
